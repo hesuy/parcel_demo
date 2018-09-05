@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>遇见你的意式香薰</title>
+    <meta name="author" content=""/>
+    <meta name="Copyright" content="uxlabs.cn"/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <!-- 格式化email、phone -->
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <!-- 删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <!-- 设置苹果工具栏颜色 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+    <meta name="format-detection" content="telphone=no, email=no"/>
+    <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta name="renderer" content="webkit">
+    <!-- 避免IE使用兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true">
+    <!-- 微软的老式浏览器 -->
+    <meta name="MobileOptimized" content="320">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <!-- windows phone 点击无高光 -->
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta http-equiv='expires' content='0'/>
+    <script type="text/javascript" src="js/fontsize.js#width=750"></script>
+</head>
+<body>
+<div class="container">
+    <div class="page-container" id="page_container">
+        <!-- 加载提示 -->
+        <section ux-page="loading" class="page page-loading">
+        </section>
+        <!-- 新客 -->
+        <section ux-page="new" class="page page-new hide">
+            <div class="btn-get">
+                <button ux-btn="get" data-id="4"><div class="highlights"></div></button>
+            </div>
+            <button class="btn-rule"></button>
+        </section>
+        <!-- 老客 -->
+        <section ux-page="old" class="page page-old hide">
+            <div class="btn-container">
+                <div class="btn btn-get2">
+                    <button ux-btn="get" data-id="1"><div class="highlights"></div></button>
+                </div>
+                <div class="btn btn-get3">
+                    <button ux-btn="get" data-id="2"><div class="highlights"></div></button>
+                </div>
+                <div class="btn btn-join">
+                    <button ux-btn="get" data-id="3"><div class="highlights"></div></button>
+                </div>
+            </div>
+            <button class="btn-rule"></button>
+        </section>
+        <!-- 礼盒动画 -->
+        <section ux-page="giftbox" class="page page-gift-box hide">
+            <div class="box">
+                <div class="text">该礼遇仅限赠予新客</div>
+            </div>
+            <button class="btn-rule"></button>
+        </section>
+        <!-- 制作过程 -->
+        <section ux-page="making" class="page page-making hide">
+            <!-- 信封层 -->
+            <div class="layer">
+                <div class="mask"></div>
+                <!-- 提示点击 -->
+                <div class="envelope1"></div>
+                <!-- 选择tag确认 -->
+                <div class="envelope-text hide">
+                    <div class="envelope">
+                        <button class="close"></button>
+                        <div class="text"></div>
+                    </div>
+                    <button class="btn-ok"></button>
+                </div>
+            </div>
+            <div class="tag-container">
+                <div class="ani">
+                    <button class="btn-go hide">
+                        <div class="highlights"></div>
+                    </button>
+                </div>
+                <button data-id="1" class="tag t1"></button>
+                <button data-id="2" class="tag t2"></button>
+                <button data-id="3" class="tag t3"></button>
+                <button data-id="4" class="tag t4"></button>
+                <button data-id="5" class="tag t5"></button>
+                <button data-id="6" class="tag t6"></button>
+                <button data-id="7" class="tag t7"></button>
+            </div>
+            <button class="btn-rule"></button>
+        </section>
+    </div>
+    <!-- 结果页面 -->
+    <section ux-page="result" class="page page-result hide">
+        <div class="result">
+            <button class="btn-share"></button>
+        </div>
+    </section>
+    <!-- 不符合 -->
+    <section ux-layer="sorry" class="layer layer-sorry hide">
+        <div class="mask"></div>
+        <div class="text">
+            <a href="###" class="btn-rule"></a>
+        </div>
+    </section>
+    <!-- 分享提示层 -->
+    <section ux-layer="share" class="layer layer-share hide">
+        <div class="mask"></div>
+        <div class="prompt-img"></div>
+    </section>
+</div>
+<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+<!--<script type="text/javascript" src="https://cdn.bootcss.com/zepto/1.2.0/zepto.min.js"></script>-->
+<!--<script type="text/javascript" src="js/wechat.js"></script>-->
+<!--<script type="text/javascript" merge="1" src="js/layer_mobile/layer.js"></script>-->
+<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>

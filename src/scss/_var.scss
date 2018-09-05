@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+$default-font-family: ("Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif);
+$default-font-size: 14px;
+$default-line-height: 1.6;
+$default-color: #222;
+$default-background-color: #fff;
+
+
+// 总播放时长
+$box-ani-duration: 3.5s;
+// 等待播放时长
+$box-ani-delay: 0s;
+
+// 总播放时长
+$water-ani-duration: 3.0s;
+// 等待播放时长
+$water-ani-delay: 0.5s;
+
+// highlights
+$highlights-ani-duration: 2.5s;
+
+// flash
+$flash-ani-duration: 3.0s;
+$flash-ani-delay: 0s;

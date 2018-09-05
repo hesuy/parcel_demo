@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+.page-new {
+  background: url("../img/bg1.png") no-repeat top center;
+  background-size: contain;
+  //max-height: 1206px;
+
+  .btn-get {
+    background: url("../img/btn_get.png") no-repeat center;
+    background-size: cover;
+    width: 267px;
+    height: 184px;
+    border: none;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 630px;
+    display: block;
+
+    &.already {
+      background: url("../img/btn_get_already.png") no-repeat center;
+      background-size: cover;
+
+      button {
+        .highlights {
+          display: none;
+        }
+      }
+    }
+
+    button {
+      border: none;
+      background: transparent;
+      width: 267px;
+      height: 90px;
+      position: absolute;
+      z-index: 1;
+      left: 0;
+      bottom: 0;
+      overflow: hidden;
+
+      .highlights {
+        width: 89px;
+        height: 147px;
+        background: url("../img/sprites_text.png") no-repeat  -513px -10px;
+        background-size: 733px 589px;
+        position: absolute;
+        bottom: -35px;
+        left: -89px;
+        animation-name: ani-highlights;
+        animation-duration: $highlights-ani-duration;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
+        animation-timing-function: linear;
+      }
+
+    }
+  }
+
+}

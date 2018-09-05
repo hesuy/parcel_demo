@@ -1,0 +1,224 @@
+@charset "UTF-8";
+
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scale-out {
+  0% {
+    transform: scale(0);
+  }
+  70% {
+    transform: scale(1.15);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes ani-water {
+  0% {
+    width: 290px;
+    height: 635px;
+    background: url("../img/ani_water_pipe.png") no-repeat;
+    background-size: 2900px 1905px;
+  }
+  3.45% {
+    background-position: -290px 0px;
+  }
+  6.90% {
+    background-position: -580px 0px;
+  }
+  10.34% {
+    background-position: -870px 0px;
+  }
+  13.79% {
+    background-position: -1160px 0px;
+  }
+  17.24% {
+    background-position: -1450px 0px;
+  }
+  20.69% {
+    background-position: -1740px 0px;
+  }
+  24.14% {
+    background-position: -2030px 0px;
+  }
+  27.59% {
+    background-position: -2320px 0px;
+  }
+  31.03% {
+    background-position: -2610px 0px;
+  }
+
+  34.48% {
+    background-position: 0px -635px;
+  }
+  37.93% {
+    background-position: -290px -635px;
+  }
+  41.38% {
+    background-position: -580px -635px;
+  }
+  44.83% {
+    background-position: -870px -635px;
+  }
+  48.28% {
+    background-position: -1160px -635px;
+  }
+  51.72% {
+    background-position: -1450px -635px;
+  }
+  55.17% {
+    background-position: -1740px -635px;
+  }
+  58.62% {
+    background-position: -2030px -635px;
+  }
+  62.07% {
+    background-position: -2320px -635px;
+  }
+  65.52% {
+    background-position: -2610px -635px;
+  }
+
+  68.97% {
+    background-position: 0px -1270px;
+  }
+  72.41% {
+    background-position: -290px -1270px;
+  }
+  75.86% {
+    background-position: -580px -1270px;
+  }
+  79.31% {
+    background-position: -870px -1270px;
+  }
+  82.76% {
+    background-position: -1160px -1270px;
+  }
+  86.21% {
+    background-position: -1450px -1270px;
+  }
+  89.66% {
+    background-position: -1740px -1270px;
+  }
+  93.10% {
+    background-position: -2030px -1270px;
+  }
+  96.55%,
+  100% {
+    background-position: -2320px -1270px;
+  }
+}
+
+@keyframes ani-open-box {
+  0% {
+    width: 366px;
+    height: 413px;
+    background: url("../img/ani_open_box.png") no-repeat;
+    background-size: 2928px 826px;
+  }
+  6.25% {
+    background-position: -366px 0px;
+  }
+  12.50% {
+    background-position: -732px 0px;
+  }
+  18.75% {
+    background-position: -1098px 0px;
+  }
+  25.00% {
+    background-position: -1464px 0px;
+  }
+  31.25% {
+    background-position: -1830px 0px;
+  }
+  37.50% {
+    background-position: -2196px 0px;
+  }
+  43.75% {
+    background-position: -2562px 0px;
+  }
+
+  50.00% {
+    background-position: -0px -413px;
+  }
+  56.25% {
+    background-position: -366px -413px;
+  }
+  62.50% {
+    background-position: -732px -413px;
+  }
+  68.75% {
+    background-position: -1098px -413px;
+  }
+  75.00% {
+    background-position: -1464px -413px;
+  }
+  81.25% {
+    background-position: -1830px -413px;
+  }
+  87.50% {
+    background-position: -2196px -413px;
+  }
+  93.75%,
+  100% {
+    background-position: -2562px -413px;
+  }
+}
+
+@keyframes ani-highlights {
+  0% {
+    left: -89px;
+  }
+  20% {
+    left: 290px;
+  }
+  21%, 100% {
+    left: 290px;
+  }
+}
+
+@keyframes ani-flash-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes ani-flash-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes ani-flash-in-out {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  26%, 75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

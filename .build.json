@@ -1,0 +1,56 @@
+{
+  "pages": {
+    "index": "src/index.html"
+  },
+  "path": {
+    "publicURL": "./",
+    "tmp": ".tmp",
+    "out": "../WeixinADP/src_mgm/"
+  },
+  "static": {
+    "js": {
+      "dir": "js",
+      "exts": [
+        "js"
+      ]
+    },
+    "img": {
+      "dir": "img",
+      "exts": [
+        "png",
+        "jpg",
+        "jpeg",
+        "gif",
+        "svg"
+      ]
+    },
+    "css": {
+      "dir": "css",
+      "exts": [
+        "css"
+      ]
+    },
+    "fonts": {
+      "dir": "fonts",
+      "exts": [
+        "woff",
+        "woff2",
+        "eot",
+        "ttf",
+        "otf"
+      ]
+    },
+    "media": {
+      "dir": "media",
+      "exts": [
+        "mp4",
+        "webm",
+        "ogg",
+        "mp3",
+        "wav",
+        "flac",
+        "aac"
+      ]
+    }
+  }
+}

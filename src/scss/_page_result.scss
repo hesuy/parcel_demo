@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+.page-result {
+  .result {
+    width: 750px;
+    height: 1206px;
+    position: relative;
+
+    .btn-share {
+      width: 220px;
+      height: 65px;
+      //border: 1px solid #fd482c;
+      border: none;
+      background: transparent;
+      position: absolute;
+      z-index: 10;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 62px;
+      margin-left: -7px;
+    }
+
+    &.r1 {
+      background: url("../img/result/1.jpg") no-repeat center;
+      background-size: contain;
+    }
+    &.r2 {
+      background: url("../img/result/2.jpg") no-repeat center;
+      background-size: contain;
+    }
+    &.r3 {
+      background: url("../img/result/3.jpg") no-repeat center;
+      background-size: contain;
+    }
+    &.r4 {
+      background: url("../img/result/4.jpg") no-repeat center;
+      background-size: contain;
+    }
+    &.r5 {
+      background: url("../img/result/5.jpg") no-repeat center;
+      background-size: contain;
+    }
+    &.r6 {
+      background: url("../img/result/6.jpg") no-repeat center;
+      background-size: contain;
+    }
+    &.r7 {
+      background: url("../img/result/7.jpg") no-repeat center;
+      background-size: contain;
+    }
+  }
+}

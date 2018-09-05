@@ -1,0 +1,309 @@
+@charset "UTF-8";
+
+.page-making {
+  background: url("../img/bg2.png") no-repeat top center;
+  background-size: contain;
+
+  .tag-container {
+    background: url("../img/water_pipe.png") no-repeat top center;
+    background-size: 290px 635px;
+    width: 290px;
+    height: 635px;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 465px;
+
+    .ani {
+      width: 290px;
+      height: 635px;
+      background: url("../img/ani_water_pipe.png") no-repeat;
+      background-size: 2900px 1905px;
+      position: absolute;
+      z-index: 5;
+      left: 0;
+      top: 0;
+
+      &.run {
+        animation-name: ani-water;
+        animation-duration: $water-ani-duration;
+        animation-delay: $water-ani-delay;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-timing-function: steps(1);
+      }
+
+      .btn-go {
+        width: 290px;
+        height: 65px;
+        //border: 1px solid #fd482c;
+        border: none;
+        background: transparent;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        overflow: hidden;
+
+        .highlights {
+          width: 89px;
+          height: 147px;
+          background: url("../img/sprites_text.png") no-repeat  -513px -10px;
+          background-size: 733px 589px;
+          position: absolute;
+          bottom: -50px;
+          left: -89px;
+          animation-name: ani-highlights;
+          animation-duration: $highlights-ani-duration;
+          animation-delay: 0s;
+          animation-iteration-count: infinite;
+          animation-fill-mode: forwards;
+          animation-timing-function: linear;
+        }
+      }
+    }
+
+    .tag {
+      position: absolute;
+      z-index: 6;
+      background: url("../img/sprites_text.png") no-repeat;
+      background-size: 733px 589px;
+      border: none;
+
+      &.t1 {
+        width: 104px;
+        height: 27px;
+        top: 45px;
+        right: 15px;
+        background-position: -10px -552px;
+
+        &.active {
+          background-position: -134px -552px;
+        }
+      }
+
+      &.t2 {
+        width: 102px;
+        height: 28px;
+        top: 90px;
+        left: -5px;
+        background-position: -10px -504px;
+
+        &.active {
+          background-position: -132px -504px;
+        }
+      }
+
+      &.t3 {
+        width: 101px;
+        height: 28px;
+        top: 160px;
+        right: 15px;
+        background-position: -622px -58px;
+
+        &.active {
+          background-position: -622px -10px;
+        }
+      }
+
+      &.t4 {
+        width: 104px;
+        height: 28px;
+        top: 240px;
+        left: -5px;
+        background-position: -10px -456px;
+
+        &.active {
+          background-position: -134px -456px;
+        }
+      }
+
+      &.t5 {
+        width: 104px;
+        height: 28px;
+        top: 320px;
+        right: 15px;
+        background-position: -258px -456px;
+
+        &.active {
+          background-position: -382px -456px;
+        }
+      }
+
+      &.t6 {
+        width: 105px;
+        height: 29px;
+        top: 410px;
+        left: -5px;
+        background-position: -178px -394px;
+
+        &.active {
+          background-position: -303px -394px;
+        }
+      }
+
+      &.t7 {
+        width: 107px;
+        height: 26px;
+        top: 500px;
+        right: 15px;
+        background-position: -381px -504px;
+
+        &.active {
+          background-position: -254px -504px;
+        }
+      }
+
+    }
+
+  }
+
+  .layer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 20;
+
+    .mask {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 1;
+      background: #ffffff;
+      opacity: 0.1;
+    }
+
+    .envelope1 {
+      width: 291px;
+      height: 358px;
+      background: url("../img/envelope1.png") no-repeat center;
+      background-size: contain;
+      position: absolute;
+      z-index: 2;
+      margin: auto;
+      right: 0;
+      left: 0;
+      bottom: 320px;
+      opacity: 0;
+
+      &.ani {
+        opacity: 0;
+        animation-name: ani-flash-in-out;
+        animation-duration: $flash-ani-duration;
+        animation-delay: $flash-ani-delay;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+      }
+
+      //&.in {
+      //  opacity: 0;
+      //  animation-name: ani-flash-in;
+      //  animation-duration: $flash-ani-duration;
+      //  animation-delay: $flash-ani-delay;
+      //  animation-iteration-count: 1;
+      //  animation-fill-mode: forwards;
+      //  animation-timing-function: ease-in;
+      //}
+      //
+      //&.out {
+      //  opacity: 1;
+      //  animation-name: ani-flash-out;
+      //  animation-duration: $flash-ani-duration;
+      //  animation-delay: $flash-ani-delay;
+      //  animation-iteration-count: 1;
+      //  animation-fill-mode: forwards;
+      //  animation-timing-function: ease-out;
+      //}
+    }
+
+    .envelope-text {
+      width: 291px;
+      height: 425px;
+      position: absolute;
+      z-index: 2;
+      margin: auto;
+      right: 0;
+      left: 0;
+      bottom: 320px;
+      text-align: center;
+
+      .envelope {
+        width: 291px;
+        height: 358px;
+        background: url("../img/envelope_null.png") no-repeat center;
+        background-size: contain;
+        position: relative;
+
+        .close {
+          background: transparent;
+          //border: 1px solid #fd482c;
+          border: none;
+          position: absolute;
+          width: 48px;
+          height: 48px;
+          left: 22px;
+          top: 12px;
+        }
+
+        .text {
+          position: absolute;
+          z-index: 6;
+          background: url("../img/sprites_text.png") no-repeat;
+          background-size: 733px 589px;
+          left: 66px;
+          top: 62px;
+
+          &.t1 {
+            width: 148px;
+            height: 129px;
+            background-position: -178px -10px;
+          }
+          &.t2 {
+            width: 147px;
+            height: 129px;
+            background-position: -346px -159px;
+          }
+          &.t3 {
+            width: 147px;
+            height: 129px;
+            background-position: -10px -159px;
+          }
+          &.t4 {
+            width: 148px;
+            height: 129px;
+            background-position: -10px -10px;
+          }
+          &.t5 {
+            width: 147px;
+            height: 129px;
+            background-position: -346px -10px;
+          }
+          &.t6 {
+            width: 147px;
+            height: 129px;
+            background-position: -177px -159px;
+          }
+          &.t7 {
+            width: 148px;
+            height: 129px;
+            background-position: -10px -308px;
+          }
+        }
+      }
+
+      .btn-ok {
+        background: url("../img/sprites_text.png") no-repeat  -178px -308px;
+        background-size: 733px 589px;
+        width: 232px;
+        height: 66px;
+        border: none;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,34 @@
+{
+  "name": "adp-mgm",
+  "version": "1.0.0",
+  "description": "adp mgm",
+  "main": "index.js",
+  "private": true,
+  "dependencies": {
+    "js-cookie": "^2.2.0",
+    "zepto-modules": "^1.0.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.1.1",
+    "cssnano": "^4.0.5",
+    "node-sass": "^4.9.3",
+    "parcel": "^1.9.7",
+    "postcss": "^7.0.2",
+    "postcss-cli": "^6.0.0",
+    "postcss-modules": "^1.3.2",
+    "postcss-px2rem": "^0.3.0",
+    "replace-in-file": "^3.4.2",
+    "rimraf": "^2.6.2",
+    "shelljs": "^0.8.2"
+  },
+  "scripts": {
+    "build": "node build.js",
+    "clean": "rimraf ./dist && mkdir dist",
+    "dev": "parcel src/index.html -p 8000",
+    "dev:new": "parcel src/new.html -p 8000",
+    "dev:old": "parcel src/old.html -p 8000",
+    "dev:old-making": "parcel src/old_making.html -p 8000"
+  },
+  "author": "ice.deng@qq.com",
+  "license": "ISC"
+}
